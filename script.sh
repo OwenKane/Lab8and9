@@ -76,7 +76,7 @@ until [ "$selection" = "0" ]; do
 		15 )	curl -H 'Accept: application/json' -F file=@Dockerfile http://localhost:8181/images | python -mjson.tool
 			restart
 			;;
-		99) exit
+		16) exit
 			;;
 		* ) printf "Not a valid option\n"
 	esac
